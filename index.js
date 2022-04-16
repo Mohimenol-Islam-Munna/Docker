@@ -7,10 +7,10 @@ app.get("/about", (req, res) => {
 });
 
 app.get("", (req, res) => {
-  res.send("<h2>Docker Practice Home Page</h2>");
+  res.send("<h2>Docker Ehsan Marketing Home Page</h2>");
 });
  
-const PORT = "8000";
+const PORT = "80";
 app.listen(PORT, () => {
   console.log(`project is running at PORT ${PORT}...`);
 });
