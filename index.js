@@ -9,7 +9,9 @@ app.get("/about", (req, res) => {
 app.get("", (req, res) => {
   res.send("<h2>Docker Practice Home Page</h2>");
 });
- 
+
+console.log("project is running....");
+
 const PORT = "8000";
 app.listen(PORT, () => {
   console.log(`project is running at PORT ${PORT}...`);
