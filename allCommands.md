@@ -3,6 +3,9 @@
 ##### 0.0. Run/Install Base Image Or Create Container Based On Base Or Our Created Image:
         docker run base_image_name/image_name
 
+###### Create container with port:
+        docker run -p PORT:PORT image_name
+
 ##### 1.1. Build/Create image based on our docker script(Dockerfile):
 ###### With default name
         docker build .
@@ -10,9 +13,7 @@
 ###### With custom name:
         docker build -t your_custom_name:your_custom_tag .
 
-##### 1.3. Run Image:
-###### When run this command a new container will create under this images.
-        docker run -p PORT:PORT image_name
+
 
 
 ##### 1.4. All Image List:
