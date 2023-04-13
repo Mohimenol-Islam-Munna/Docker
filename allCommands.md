@@ -1,10 +1,16 @@
 ## Managing Images and Containers
 
-##### 0.0. Run/Install Base Image Or Create Container Based On Base Or Our Created Image:
+##### 0.0. Run/Install base image or create container based on base or our created image:
         docker run base_image_name/image_name
 
-###### Create container with port:
+##### 1.1 Run image or create container with port:
         docker run -p PORT:PORT image_name
+
+##### 1.10. Run image or create container with volume:
+        docker run -p PORT:PORT -v volume_name:/WORKDIR/path image_name
+
+##### 1.11. Run image or create container with volume and bind mount:
+        docker run -p PORT:PORT -v volume_name:/WORKDIR/path -v "abosulate_path_of_project_folder:/WORKDIR" image_name
 
 ##### 1.1. Build/Create image based on our docker script(Dockerfile):
 ###### With default name
@@ -13,31 +19,20 @@
 ###### With custom name:
         docker build -t your_custom_name:your_custom_tag .
 
-
-
-
-##### 1.4. All Image List:
+##### 1.4. All image list:
         docker images
 
-##### 1.5. Remove Image(When there is no stoped and running container under this image):
+##### 1.5. Remove image(When there is no stoped and running container under this image):
         docker rmi image_name
 
-##### 1.6. Remove All Image(Which are not used by containers):
+##### 1.6. Remove all image(Which are not used by containers):
         docker image prune
 
-##### 1.7. Inspect Image:
-        docker image inspect image_name 
-
-
-
-##### 1.9. Remove All Image With Tag(Which are not used by containers):
+##### 1.9. Remove all wmage with tag(Which are not used by containers):
         docker image prune -a
 
-##### 1.10. Run Image With Volume:
-        docker run -p PORT:PORT -v volume_name:/WORKDIR/path image_name
-
-##### 1.11. Run Image With Volume and Bind Mount:
-        docker run -p PORT:PORT -v volume_name:/WORKDIR/path -v "abosulate_path_of_project_folder:/WORKDIR" image_name
+##### 1.7. Inspect image:
+        docker image inspect image_name 
 
 
         ---***---
