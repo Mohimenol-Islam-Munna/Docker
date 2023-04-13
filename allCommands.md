@@ -1,37 +1,37 @@
 ## Managing Images and Containers
 
-##### 0.0. Run/Install base image or create container based on base or our created image:
+##### 1.0. Run/Install base image or create container based on base or our created image:
         docker run base_image_name/image_name
 
-##### 1.1 Run image or create container with port:
+##### 1.1. Run image or create container with port:
         docker run -p PORT:PORT image_name
 
-##### 1.10. Run image or create container with volume:
+##### 1.2. Run image or create container with volume:
         docker run -p PORT:PORT -v volume_name:/WORKDIR/path image_name
 
-##### 1.11. Run image or create container with volume and bind mount:
+##### 1.3. Run image or create container with volume and bind mount:
         docker run -p PORT:PORT -v volume_name:/WORKDIR/path -v "abosulate_path_of_project_folder:/WORKDIR" image_name
 
-##### 1.1. Build/Create image based on our docker script(Dockerfile):
+##### 1.4. Build/Create image based on our docker script(Dockerfile):
 ###### With default name
         docker build .
 
 ###### With custom name:
         docker build -t your_custom_name:your_custom_tag .
 
-##### 1.4. All image list:
+##### 1.5. All image list:
         docker images
 
-##### 1.5. Remove image(When there is no stoped and running container under this image):
+##### 1.6. Remove image(When there is no stoped and running container under this image):
         docker rmi image_name
 
-##### 1.6. Remove all image(Which are not used by containers):
+##### 1.7. Remove all image(Which are not used by containers):
         docker image prune
 
-##### 1.9. Remove all wmage with tag(Which are not used by containers):
+##### 1.8. Remove all image with tag(Which are not used by containers):
         docker image prune -a
 
-##### 1.7. Inspect image:
+##### 1.9. Inspect image:
         docker image inspect image_name 
 
 
