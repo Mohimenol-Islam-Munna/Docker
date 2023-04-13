@@ -34,8 +34,7 @@
 ##### 1.9. Inspect image:
         docker image inspect image_name 
 
-
-        ---***---
+##### ---***---
 
 ##### 2.1. Stop Container:
         docker stop container_name
