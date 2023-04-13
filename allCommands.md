@@ -1,15 +1,11 @@
 ## Managing Images and Containers
 
-##### 0.0. Run/Install Base Image:
-        docker run base_image_name
+##### 0.0. Run/Install Base Image Or Create Container Based On This Image:
+        docker run base_image_name/image_name
 
 ##### 1.1. Build Image:
 ###### When run this command a new image will create based on base image and script.
         docker build .
-
-##### 1.2. Run Image:
-###### When run this command a new container will create under this images.
-        docker run image_name
 
 ##### 1.3. Run Image:
 ###### When run this command a new container will create under this images.
