@@ -1,15 +1,19 @@
 ## Managing Images and Containers
 
-##### 0.0. Run/Install Base Image Or Create Container Based On This Image:
+##### 0.0. Run/Install Base Image Or Create Container Based On Base Or Our Created Image:
         docker run base_image_name/image_name
 
-##### 1.1. Build Image:
-###### When run this command a new image will create based on base image and script.
+##### 1.1. Build/Create image based on our docker script(Dockerfile):
+###### With default name
         docker build .
+
+###### With custom name:
+        docker build -t your_custom_name:your_custom_tag .
 
 ##### 1.3. Run Image:
 ###### When run this command a new container will create under this images.
         docker run -p PORT:PORT image_name
+
 
 ##### 1.4. All Image List:
         docker images
@@ -23,8 +27,7 @@
 ##### 1.7. Inspect Image:
         docker image inspect image_name 
 
-##### 1.8. Set Image Name:
-        docker build -t your_custom_name:your_custom_tag .
+
 
 ##### 1.9. Remove All Image With Tag(Which are not used by containers):
         docker image prune -a
