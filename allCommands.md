@@ -37,7 +37,7 @@
 ##### ---***---
 
 
-##### 2.8. Set Container Name:
+##### 2.1. Set Container Name:
         docker run -p PORT:PORT --name set_your_name image_name
 
 ##### 2.2. All Container List:
@@ -46,20 +46,24 @@
 ##### 2.3. Active Container List:
         docker ps
 
-##### 2.1. Stop Container:
+##### 2.4. Stop Container:
         docker stop container_name
 
-##### 2.4. Remove Container:
+##### 2.5. Run Stoped Container:
+        docker start container_name
+        docker start -a container_name
+
+##### 2.6. Remove Container:
         docker rm container_name
 
-##### 2.5. Remove Multiple Containers:
+##### 2.7. Remove Multiple Containers:
         docker rm container_name
 
-##### 2.6. Remove Container Automatically:
+##### 2.8. Remove Container Automatically:
 ###### Set this option when run image. Remove this container when this will stoped:
         docker run -p PORT:PORT -d --rm image_name
 
-##### 2.7. Copy File From and To A Container:
+##### 2.9. Copy File From and To A Container:
 ###### Copy file/folder to container or form container:
 ###### Copy to running container:
         docker cp source_from container_name:/source_to
